@@ -8,16 +8,16 @@ body {
   font-weight: 800;
 }
 
+.para {
+  font-size: 22px;
+}
+
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
+.button.confirm {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,12 +29,13 @@ body {
   font-size: 20px;
 }
 
-.child {
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
-
+/* no need to remove div because although it does target child div and have the same number of selectors total,
+.child is class which is more specific than div, 2 class selectors beat 1 class 1 type. */
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
